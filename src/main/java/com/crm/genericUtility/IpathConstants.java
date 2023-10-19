@@ -8,4 +8,8 @@ public interface IpathConstants {
 	String filepath = ".\\src\\test\\resources\\commonData.properties";
 	String excelpath = ".\\src\\test\\resources\\Book1.xlsx";
 	
+	
+	String bdUrl = "jdbc:mysql://rmgtestingserver:3333/projects";
+	String dbUserName = "root@%";
+	String dbPassword = "root";
 }

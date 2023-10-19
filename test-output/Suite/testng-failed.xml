@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="1" parallel="tests" name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="Package_TestngScripts.CampaignTestNG">
         <methods>
@@ -19,12 +20,39 @@
           <include name="CloseBrowser"/>
           <include name="campaignTestNG"/>
           <include name="configureLogout"/>
-          <include name="connectDB"/>
           <include name="CloseDbconnection"/>
+          <include name="connectDB"/>
           <include name="configureLogin"/>
           <include name="configureDb"/>
         </methods>
       </class> <!-- Package_TestngScripts.CreateCampaignMandatoryTest -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Package_TestngScripts.CampaignTestNG">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="configureLogout"/>
+          <include name="connectDB"/>
+          <include name="CloseDbconnection"/>
+          <include name="configureLogin"/>
+          <include name="campaignTest"/>
+          <include name="configureDb"/>
+        </methods>
+      </class> <!-- Package_TestngScripts.CampaignTestNG -->
+      <class name="Package_TestngScripts.CreateCampaignMandatoryTest">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="campaignTestNG"/>
+          <include name="configureLogout"/>
+          <include name="CloseDbconnection"/>
+          <include name="connectDB"/>
+          <include name="configureLogin"/>
+          <include name="configureDb"/>
+        </methods>
+      </class> <!-- Package_TestngScripts.CreateCampaignMandatoryTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

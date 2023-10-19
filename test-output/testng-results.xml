@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[campaignTest Test Execution Starts]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-08-10T13:26:06 IST" name="Suite" finished-at="2023-08-10T13:26:06 IST" duration-ms="0">
+  <suite started-at="2023-10-19T09:19:05 IST" name="Default suite" finished-at="2023-10-19T09:19:28 IST" duration-ms="22920">
     <groups>
-      <group name="smoke">
-        <method signature="CampaignTestNG.campaignTest()[pri:0, instance:Package_TestngScripts.CampaignTestNG@6ed3ccb2]" name="campaignTest" class="Package_TestngScripts.CampaignTestNG"/>
-      </group> <!-- smoke -->
     </groups>
-  </suite> <!-- Suite -->
+    <test started-at="2023-10-19T09:19:05 IST" name="Default test" finished-at="2023-10-19T09:19:28 IST" duration-ms="22920">
+      <class name="Package_TestngScripts.MultipleWindowHandle">
+        <test-method signature="multipleWindow()[pri:0, instance:Package_TestngScripts.MultipleWindowHandle@359df09a]" started-at="2023-10-19T09:19:05 IST" name="multipleWindow" finished-at="2023-10-19T09:19:27 IST" duration-ms="22811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleWindow -->
+      </class> <!-- Package_TestngScripts.MultipleWindowHandle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

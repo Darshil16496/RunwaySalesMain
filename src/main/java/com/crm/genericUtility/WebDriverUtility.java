@@ -33,6 +33,10 @@ public class WebDriverUtility {
 		cd.manage().window().maximize();
 	}
 	
+	public void CloseBrowser(WebDriver cd) {
+		cd.close();
+		System.out.println("Close The Browser");
+	}
 	/**
 	 * This Methos is used to Wait for perticular element to load
 	 * @param cd

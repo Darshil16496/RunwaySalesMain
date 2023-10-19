@@ -1,11 +1,14 @@
 package com.crm.genericUtility;
 
 import java.sql.Connection;
+
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.mysql.cj.jdbc.Driver;
+
+
 
 public class DatabaseUtility {
 	Connection con;
@@ -17,7 +20,8 @@ public class DatabaseUtility {
 	public void connectDBcon() throws SQLException {
 		Driver driver = new Driver();
 		DriverManager.registerDriver(driver);
-		con = DriverManager.getConnection(IpathConstants.dbURL, IpathConstants.username, IpathConstants.password);
+//		con = DriverManager.getConnection(IpathConstants.dbURL, IpathConstants.username, IpathConstants.password);
+		con = DriverManager.getConnection(IpathConstants.bdUrl, IpathConstants.dbUserName, IpathConstants.dbPassword);
 	}
 	
 	/**

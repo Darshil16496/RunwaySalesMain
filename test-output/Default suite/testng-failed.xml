@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package_TestngScripts.OpportunityTestNGTest">
+      <class name="Package_TestngScripts.MultipleWindowHandle">
         <methods>
-          <include name="CloseBrowser"/>
-          <include name="configureLogout"/>
-          <include name="CloseDbconnection"/>
-          <include name="connectDB"/>
-          <include name="opportunityTest"/>
-          <include name="configureLogin"/>
-          <include name="configureDb"/>
+          <include name="multipleWindow"/>
         </methods>
-      </class> <!-- Package_TestngScripts.OpportunityTestNGTest -->
+      </class> <!-- Package_TestngScripts.MultipleWindowHandle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
